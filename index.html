@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shanto Das - Portfolio</title>
+    <style>
+        /* CSS Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Navigation */
+        header {
+            background: #1e293b;
+            color: #fff;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(30, 41, 59, 0.8), rgba(30, 41, 59, 0.8)), 
+                        url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 0 1rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero h2 {
+            font-size: 1.5rem;
+            color: #38bdf8;
+            margin-bottom: 1rem;
+            font-weight: normal;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            color: #cbd5e1;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #38bdf8;
+            color: #0f172a;
+            padding: 0.8rem 1.8rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .btn:hover {
+            background: #0284c7;
+            color: #fff;
+            transform: translateY(-3px);
+        }
+
+        /* Sections */
+        section {
+            padding: 4rem 10%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #0f172a;
+        }
+
+        /* Cards Layout */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            margin-bottom: 0.5rem;
+            color: #0284c7;
+        }
+
+        .card .institution {
+            font-weight: bold;
+            color: #475569;
+            margin-bottom: 0.5rem;
+        }
+
+        .card .year {
+            font-size: 0.9rem;
+            color: #0284c7;
+            background: #e0f2fe;
+            display: inline-block;
+            padding: 0.2rem 0.6rem;
+            border-radius: 15px;
+            margin-bottom: 1rem;
+        }
+
+        /* Contact Section */
+        .contact-info {
+            text-align: center;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .contact-info p {
+            font-size: 1.2rem;
+            margin-top: 1rem;
+        }
+
+        .phone-link {
+            color: #0284c7;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .phone-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background: #0f172a;
+            color: #94a3b8;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- হেডার / নেভিগেশন বার -->
+    <header>
+        <div class="logo">Shanto Das</div>
+        <nav>
+            <a href="#home">হোম</a>
+            <a href="#about">আমার সম্পর্কে</a>
+            <a href="#education">শিক্ষাগত যোগ্যতা</a>
+            <a href="#services">সেবা</a>
+            <a href="#contact">যোগাযোগ</a>
+        </nav>
+    </header>
+
+    <!-- হিরো সেকশন -->
+    <div class="hero" id="home">
+        <h1>আমি Shanto Das</h1>
+        <h2>ওয়েব ডেভেলপার ও ডিজাইনার</h2>
+        <p>স্বাগতম আমার ব্যক্তিগত ওয়েবসাইটে! আমি নতুন প্রযুক্তি ও ডিজিটাল সমাধান নিয়ে কাজ করতে ভালোবাসি।</p>
+        <a href="#contact" class="btn">যোগাযোগ করুন</a>
+    </div>
+
+    <!-- আমার সম্পর্কে -->
+    <section id="about">
+        <h2 class="section-title">আমার সম্পর্কে</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto;">
+            আমি নতুন প্রযুক্তি শিখতে এবং তা দিয়ে বাস্তব সমস্যার সমাধান করতে পছন্দ করি। আধুনিক ও সুন্দর ডিজাইনের ওয়েবসাইট তৈরি করা আমার মূল লক্ষ্য।
+        </p>
+    </section>
+
+    <!-- শিক্ষাগত যোগ্যতা -->
+    <section id="education">
+        <h2 class="section-title">শিক্ষাগত যোগ্যতা</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>স্নাতক (Bachelor Degree)</h3>
+                <p class="institution">National University</p>
+                <span class="year">অধ্যয়নরত / চলমান</span>
+                <p>এখানে আপনার বিষয় বা বিভাগ (যেমন: CSE, BBA, BA) লিখে নিতে পারেন।</p>
+            </div>
+            <div class="card">
+                <h3>উচ্চ মাধ্যমিক (HSC)</h3>
+                <p class="institution">আপনার কলেজের নাম</p>
+                <span class="year">পাসের সাল</span>
+                <p>এখানে আপনার বিভাগ (বিজ্ঞান/মানবিক/ব্যবসায় শিক্ষা) লিখে নিতে পারেন।</p>
+            </div>
+            <div class="card">
+                <h3>মাধ্যমিক (SSC)</h3>
+                <p class="institution">আপনার স্কুলের নাম</p>
+                <span class="year">পাসের সাল</span>
+                <p>এখানে আপনার বিভাগ লিখে নিতে পারেন।</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- সেবাসমূহ -->
+    <section id="services">
+        <h2 class="section-title">আমার সেবাসমূহ</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>ওয়েব ডিজাইন</h3>
+                <p>যেকোনো ডিভাইসে সুন্দরভাবে প্রদর্শিত হয় এমন রেসপন্সিভ ও দৃষ্টিনন্দিত ওয়েব ডিজাইন।</p>
+            </div>
+            <div class="card">
+                <h3>ওয়েব ডেভেলপমেন্ট</h3>
+                <p>HTML, CSS এবং JavaScript ব্যবহার করে দ্রুত এবং নিরাপদ ওয়েবসাইট তৈরি।</p>
+            </div>
+            <div class="card">
+                <h3>UI/UX ডিজাইন</h3>
+                <p>ব্যবহারকারীদের জন্য সহজ এবং সাবলীল ইন্টারফেস তৈরি করার পরিকল্পনা।</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- যোগাযোগ সেকশন -->
+    <section id="contact">
+        <h2 class="section-title">যোগাযোগ করুন</h2>
+        <div class="contact-info">
+            <h3>Shanto Das</h3>
+            <p>📱 মোবাইল: <a href="tel:01758231104" class="phone-link">01758231104</a></p>
+        </div>
+    </section>
+
+    <!-- ফুটার -->
+    <footer>
+        <p>&copy; ২০২৬ Shanto Das। সর্বস্বত্ব সংরক্ষিত।</p>
+    </footer>
+
+</body>
+</html>
