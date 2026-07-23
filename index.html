@@ -64,18 +64,17 @@
             color: #fff;
             padding: 0 1rem;
         }
-
-                            /* প্রফেশনাল রাউন্ডেড শেপ ও সোনালী ৫ডি স্টাইল */
+        /* প্রফেশনাল রাউন্ডেড শেপ ও নেভি ব্লু ৫ডি স্টাইল */
         .profile-img {
             width: 240px;
             height: 240px;
             border-radius: 24px;
             object-fit: cover;
-            border: 3px solid #ffd700; /* সোনালী বর্ডার */
+            border: 3px solid #1e3a8a; /* রয়েল নেভি ব্লু বর্ডার */
             margin-bottom: 1rem;
             
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7), 
-                        0 0 25px rgba(255, 215, 0, 0.6);
+                        0 0 25px rgba(30, 58, 138, 0.7);
             animation: pulse5D 3s infinite alternate ease-in-out;
             transition: transform 0.4s ease, border-color 0.4s ease;
             cursor: pointer;
@@ -83,12 +82,23 @@
 
         .profile-img:hover {
             transform: scale(1.05) rotate(1deg);
-            border-color: #fff8dc;
-            box-shadow: 0 0 35px #ffd700, 
-                        0 0 60px #ffb700;
+            border-color: #3b82f6;
+            box-shadow: 0 0 35px #1d4ed8, 
+                        0 0 60px #60a5fa;
         }
 
         @keyframes pulse5D {
+            0% {
+                transform: translateY(0px) scale(1);
+                box-shadow: 0 0 25px #1e3a8a, 0 15px 35px rgba(0, 0, 0, 0.7);
+            }
+            100% {
+                transform: translateY(-12px) scale(1.03);
+                box-shadow: 0 0 45px #2563eb, 0 0 25px #3b82f6, 0 25px 45px rgba(0, 0, 0, 0.8);
+            }
+        }
+        
+                            
             0% {
                 transform: translateY(0px) scale(1);
                 box-shadow: 0 0 20px #ffd700, 0 15px 35px rgba(0, 0, 0, 0.7);
